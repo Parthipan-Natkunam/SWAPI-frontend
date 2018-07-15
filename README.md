@@ -10,6 +10,21 @@ A quick front-end prototype for the StarWars API from swapi.co
 6. Pagination will not be called when filters are applied. the filters have to be cleared with the clear filter button ('the red FAB button') to continue with pagination.
 7. At any point the filter would consider only the data that has been already fetched. Future paginated data will be added to cache variable as and when a pagination response is received.
 8. As an additional UX improvement, a scroll to top FAB would appear when the filters are scrolled beyond visibility.
+9. All the filter inputs are intentionally made as type text.
 
 ## Screenshots:
+
+## File Structure:
+- All the custom css styles are in the main.css file located inside the css folder.
+- Js libraries namely jQuery and underscore are used in their minified form and can be found in ```js/lib```
+- thw=e main js script is named as ```main.js`` and is in ```js`` directory.
+- The template file is in the root directory and is named as ```index.html```.
+
+## Steps to Run the Prototype:
+To successfully run the prototype, an internet connection will be required on the testing machine.
+opening the index.html file in the root directory will start the prototype.
+
+## Intended Behaviour on Multiple Filter Value Scenario:
+- The intended behaviour is an 'AND' behaviour.
+
 
