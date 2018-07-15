@@ -11,6 +11,7 @@ A quick front-end prototype for the StarWars API from swapi.co
 7. At any point the filter would consider only the data that has been already fetched. Future paginated data will be added to cache variable as and when a pagination response is received.
 8. As an additional UX improvement, a scroll to top FAB would appear when the filters are scrolled beyond visibility.
 9. All the filter inputs are intentionally made as type text.
+
 10.Three Promises (to fetch people data, film title and merging appropriate film title with the corresponding person object) are used to avoid the callback-hell problem and the promises are implemented as jQuery Deferred objects.
 
 ## Workflow Screenshots:
