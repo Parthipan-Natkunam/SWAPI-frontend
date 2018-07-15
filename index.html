@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SWAPI Frontend Data Consumer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="loader">
+		<div class="load-wrapper">
+			<div class="spinner"></div>
+			<p class="loading-txt">Loading Data...</p>
+		</div>
+	</div>
+	<nav class="top-nav__dark">
+		<div class="top-nav--brand-title__center">SWAPI Frontend Proto</div>
+		<hr/>
+		<div class="top-nav--search-form">
+			<div class="top-nav--search-field">
+				<label>Name: </label>
+				<input type="text" class="top-nav--filed-input" placeholder="Search by name" id="name-srch">
+			</div>
+			<div class="top-nav--search-field">
+				<label>Birth Year: </label>
+				<input type="text" class="top-nav--filed-input" placeholder="Search by birth year" id="byr-srch">
+			</div>
+			<div class="top-nav--search-field">
+				<label>Gender: </label>
+				<input type="text" class="top-nav--filed-input" placeholder="Search by gender" id="gndr-srch">
+			</div>
+			<div class="top-nav--search-field">
+				<label>Film Title: </label>
+				<input type="text"  class="top-nav--filed-input" placeholder="search by film title" id="title-srch">
+			</div>			
+		</div>
+	</nav>
+	<main>
+		<section id="results-container">
+			
+		</section>
+		<div id="no-data">
+			<p>No Data Available</p>
+		</div>
+		<div id="clear-filters" class="fab-btn" title="Reset search filters">
+			<span>&times;</span>
+		</div>
+		<div id="scroll-top" class="fab-btn" title="scroll to top">
+			<span>&#8657;</span>
+		</div>
+	</main>
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/underscore.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>	
+</body>
+</html>

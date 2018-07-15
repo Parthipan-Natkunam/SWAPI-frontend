@@ -1,0 +1,146 @@
+/*custom font*/
+@import url('https://fonts.googleapis.com/css?family=Coustard');
+
+/*Global Resets*/
+html,body{
+	margin:0;
+	padding:0;
+	font-size:16px;
+	background:#ccc;
+	font-family:'Coustard', serif;
+	box-sizing: border-box;
+}
+
+/*custom generics*/
+.f-bold{
+	font-weight: bold;
+}
+
+/*nav*/
+nav.top-nav__dark{
+	background-color: #222;
+	color: #fff;
+	min-height: 80px;
+	text-align: center;
+	padding: 1rem;
+	margin-bottom: 0.5rem;
+}
+nav.top-nav__dark > .top-nav--brand-title__center{
+	font-size: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+nav.top-nav__dark > .top-nav--search-form{
+	text-align: left;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+nav.top-nav__dark > .top-nav--search-form > .top-nav--search-field{
+	width: calc(25% - 20px);
+    margin: 0 5px 0 5px;
+}
+nav.top-nav__dark > .top-nav--search-form > .top-nav--search > .top-nav--filed-input{
+	width: 100%;
+}
+
+/*results card*/
+#results-container{
+	padding: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card{
+	background-color: #fff;
+	width: calc(25% - 2rem);
+	margin:0.5rem;
+	padding: 0.5rem;
+	text-align: justify;
+	box-shadow: rgba(0,0,0,0.5) 0 6px 20px;
+	border-top: 2px solid #ff6347;
+}
+
+/*UX Improvs*/
+/*scroll-top*/
+.fab-btn{
+	height:50px;
+	width: 50px;
+	position: fixed;
+	right:5px;
+	color:#fff;
+	border-radius: 50%;
+	z-index: 10;
+	box-shadow: rgba(0,0,0,0.4) 0px 3px 12px;
+	cursor:pointer;
+	display:none;
+}
+.fab-btn>span{
+    position: relative;
+    top: 3px;
+    left: 15px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#scroll-top{
+	background-color: #2e2eff;
+	bottom: 90px;
+}
+#clear-filters{
+	background-color: red;
+	bottom: 30px;
+}
+/*no data tpl*/
+#no-data{
+	background-color: #fff;
+	width:100%;
+	height:100%;
+	color: #807f7f;
+	font-size: 1.8rem;
+	text-align: center;
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 110px;
+    bottom: 0;
+    display:none;
+}
+#no-data > p{
+	position: relative;
+    top: 35%;
+}
+/*UI loader*/
+#loader{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color: #222;
+	opacity:0.4;
+	z-index: 11;
+}
+.load-wrapper{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#loader .spinner {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #555;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 0.5s linear infinite;
+  animation: spin 0.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#loader .loading-txt{
+	color: #ccc;
+    transform: translateX(-15%);
+}
