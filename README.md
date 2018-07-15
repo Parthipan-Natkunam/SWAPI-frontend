@@ -13,8 +13,23 @@ A quick front-end prototype for the StarWars API from swapi.co
 9. All the filter inputs are intentionally made as type text.
 10.Three Promises (to fetch people data, film title and merging appropriate film title with the corresponding person object) are used to avoid the callback-hell problem and the promises are implemented as jQuery Deferred objects.
 
-## Screenshots:
+## Workflow Screenshots:
 
+  #### Initial Loader and UI block  
+  <img src="readmeImg/loader.jpg" alt="screenshot1"/>
+  
+  #### Data Rendered as Cards
+  <img src="readmeImg/firstLoad.jpg" alt="screenshot2"/>
+  
+  #### Filter Actions 
+  <img src="readmeImg/filterAction.jpg" alt="screenshot3"/>
+  
+  #### Pagination on Scroll
+  <img src="readmeImg/pagination.jpg" alt="screenshot4"/>
+
+  #### FAB Actions
+  <img src="readmeImg/fabActions.jpg" alt="screenshot5"/>
+  
 ## File Structure:
 - All the custom css styles are in the main.css file located inside the css folder.
 - Js libraries namely jQuery and underscore are used in their minified form and can be found in ```js/lib```
